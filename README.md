@@ -1,6 +1,7 @@
 # Tic Tac Toe
 
 ![](images/tictactoe.png)
+**Live Demo**: https://mia-tictactoe.netlify.app/
 
 ## 代码逻辑
 1. 用数字**0-8**从左到右，从上到下标记3x3棋盘的每个格子。将其视为数组的index。
