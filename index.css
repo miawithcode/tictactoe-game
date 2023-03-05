@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+}
+
+body{
+    background-color: beige;
+}
+h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: auto;
+    background-color: white;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 100px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#statusText{
+    margin-top: 10px;
+    color: #2a7bc7;
+    font-size: 30px;
+}
+
+#restartBtn{
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 4px solid;
+    background-color: white;
+}
+
+#restartBtn:hover{
+    background-color: black;
+    color: beige;
+    cursor: pointer;
+}
