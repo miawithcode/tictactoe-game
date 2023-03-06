@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic Tac Toe 井字棋
 
 ![](images/tictactoe.png)
 **Live Demo**: https://mia-tictactoe.netlify.app/
