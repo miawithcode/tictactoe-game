@@ -13,8 +13,10 @@ const winCondition =[
     [2, 4, 6]
 ];
 
+const X_PLAYER = "X";
+const O_PLAYER = "O";
 let option = ["", "", "", "", "", "", "", "", ""]; //玩家的选择，暂时9个都为空字符
-let currentPlayer = "X";
+let currentPlayer = X_PLAYER;
 let running = false;
 
 startGame();
@@ -43,7 +45,7 @@ function updateCell(cell, index){
 }
 
 function changePlayer(){
-    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    currentPlayer = (currentPlayer == X_PLAYER) ? O_PLAYER : X_PLAYER;
     statusText.textContent = `${currentPlayer}'s turn`;
 }
 
@@ -79,7 +81,7 @@ function checkWinner(){
 
 function restartGame(){
     running = true
-    currentPlayer = "X";
+    currentPlayer = X_PLAYER;
     option = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s turn`
     cells.forEach(cell => cell.textContent = "");
